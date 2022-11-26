@@ -14,6 +14,8 @@
             ghc
             elixir
             kotlin
+            odin
+            julia-bin
           ];
         };
       }
