@@ -1,10 +1,10 @@
+module Main where
+
 import System.IO
+import System.FilePath
 
-import qualified Data.Text.Lazy.IO as txt
-
-readInputFile :: IO () -> [String]
-readInputFile = do
-  return txt.readFile "./input.txt"
+readInputFile :: FilePath -> IO [String]
+readInputFile = fmap lines . readFile
 
 main :: IO ()
-main = putStrLn $ map readInputFile
+main = mapM_ putStrLn =<< readInputFile "./input.txt"
