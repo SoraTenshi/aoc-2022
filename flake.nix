@@ -13,6 +13,7 @@
             nixpkgs-fmt
             ghc
             elixir
+            kotlin
           ];
         };
       }
