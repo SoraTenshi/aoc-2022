@@ -16,6 +16,9 @@
             kotlin
             odin
             julia-bin
+            crystal
+            dmd
+            nim
           ];
         };
       }
