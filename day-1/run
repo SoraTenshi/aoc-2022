@@ -1,5 +1,5 @@
 #!/bin/sh
-ghc -O2 -o main main.hs -threaded -rtsopts
+ghc -O2 -o main main.hs -threaded -rtsopts -Wall
 ./main
 
 rm main
