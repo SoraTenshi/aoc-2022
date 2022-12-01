@@ -1,0 +1,7 @@
+#!/bin/sh
+ghc -O2 -o main main.hs -threaded -rtsopts
+./main
+
+rm main
+rm main.o
+rm main.hi
