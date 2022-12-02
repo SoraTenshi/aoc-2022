@@ -32,7 +32,22 @@ defmodule Main do
   def asTokens([:scissor, :rock]), do: @points[:win] + @points[:rock]
   def asTokens([:scissor, :paper]), do: @points[:lose] + @points[:paper]
 
-  
+  # Part 2
+  # rock -> lose
+  # paper -> draw
+  # scissor -> win
+  def asTokens2([:rock, :scissor]), do: [:rock, :paper]
+  def asTokens2([:paper, :scissor]), do: [:paper, :scissor]
+  def asTokens2([:scissor, :scissor]), do: [:scissor, :rock]
+
+  def asTokens2([:rock, :paper]), do: [:rock, :rock]
+  def asTokens2([:paper, :paper]), do: [:paper, :paper]
+  def asTokens2([:scissor, :paper]), do: [:scissor, :scissor]
+
+  def asTokens2([:rock, :rock]), do: [:rock, :scissor]
+  def asTokens2([:paper, :rock]), do: [:paper, :rock]
+  def asTokens2([:scissor, :rock]), do: [:scissor, :paper]
+
   def read_input_file(path) do
     File.read!(path)
       |> String.split("\n", trim: true)
@@ -45,15 +60,29 @@ defmodule Main do
           |> String.split(" ", trim: true)
           |> Enum.map(&@symbols[&1])
           |> asTokens()
-        end)
-        |> Enum.sum
+      end)
+      |> Enum.sum
+  end
+  
+  def solve2(str) do 
+    str
+      |> Enum.map(fn l -> 
+        l 
+          |> String.split(" ", trim: true)
+          |> Enum.map(&@symbols[&1])
+          |> asTokens2()
+          |> asTokens()
+      end)
+      |> Enum.sum
   end
   
   def main() do
     file = read_input_file("input.txt")
     solved = solve(file)
+    solved2 = solve2(file)
     
     IO.puts(solved)
+    IO.puts(solved2)
   end
 end
 
