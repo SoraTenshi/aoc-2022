@@ -50,6 +50,24 @@ solve :: proc(elf_section: []string) -> int {
 	return counter;
 }
 
+solve2 :: proc(elf_section: []string) -> int {
+	counter := 0;
+	for line in elf_section {
+		pairs := strings.split(line, ",");
+		defer delete(pairs); 
+
+		first := to_section(pairs[0]);
+		second := to_section(pairs[1]);
+		
+		if(first.min <= second.max && first.max >= second.min) {
+			counter += 1;
+		}
+	}
+	
+	return counter;
+}
+
+
 main :: proc() {
 	data := read_files_from_input("input.txt");
 	if data == nil {
@@ -57,7 +75,6 @@ main :: proc() {
 	}
 	defer delete(data);
 
-	counter := solve(data);
-	
-	fmt.println("Part 1: ", counter);
+	fmt.println("Part 1: ", solve(data));
+	fmt.println("Part 2: ", solve2(data));
 }
