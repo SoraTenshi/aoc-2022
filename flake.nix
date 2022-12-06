@@ -19,6 +19,9 @@
             crystal
             dmd
             nim
+            swift
+            vlang
+            c3c
           ];
         };
       }
