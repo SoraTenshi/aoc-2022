@@ -27,3 +27,7 @@
 | 23  |          | -       |
 | 24  |          | -       |
 | 25  |          | -       |
+
+### Other ideas for programming languages:
+- Gleam (looks pretty decent, similar to elixir)
+
