@@ -21,6 +21,7 @@
             nim
             swift
             vlang
+            gleam
             c3c
           ];
         };

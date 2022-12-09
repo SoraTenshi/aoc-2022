@@ -12,7 +12,7 @@
 | 8   | Nim      | -       |
 | 9   | Swift    | -       |
 | 10  | V        | -       |
-| 11  | C3       | -       |
+| 11  | Gleam    | -       |
 | 12  |          | -       |
 | 13  |          | -       |
 | 14  |          | -       |
@@ -29,5 +29,6 @@
 | 25  |          | -       |
 
 ### Other ideas for programming languages:
-- Gleam (looks pretty decent, similar to elixir)
-
+Maybe C3 ? 
+If there's a challenge that may not require me to do any more complex parsing,
+i am sure to pick C3.
