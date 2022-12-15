@@ -12,21 +12,6 @@
 | 8   | Nim      | -       |
 | 9   | Swift    | -       |
 | 10  | *        | -       |
-| 11  |          | -       |
-| 12  |          | -       |
-| 13  |          | -       |
-| 14  |          | -       |
-| 15  |          | -       |
-| 16  |          | -       |
-| 17  |          | -       |
-| 18  |          | -       |
-| 19  |          | -       |
-| 20  |          | -       |
-| 21  |          | -       |
-| 22  |          | -       |
-| 23  |          | -       |
-| 24  |          | -       |
-| 25  |          | -       |
 
 ### Remarks
 * -> Vlang and Hare have been tried. Both of which i had encountered issues with including stl libs, no idea why but at this point i don't want to bother with it anymore.
