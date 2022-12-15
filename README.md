@@ -11,8 +11,8 @@
 | 7   | D        | -       |
 | 8   | Nim      | -       |
 | 9   | Swift    | -       |
-| 10  | V        | -       |
-| 11  | Gleam    | -       |
+| 10  | *        | -       |
+| 11  |          | -       |
 | 12  |          | -       |
 | 13  |          | -       |
 | 14  |          | -       |
@@ -28,7 +28,7 @@
 | 24  |          | -       |
 | 25  |          | -       |
 
-### Other ideas for programming languages:
-Maybe C3 ? 
-If there's a challenge that may not require me to do any more complex parsing,
-i am sure to pick C3.
+### Remarks
+* -> Vlang and Hare have been tried. Both of which i had encountered issues with including stl libs, no idea why but at this point i don't want to bother with it anymore.
+
+Also it seems that i lost interested, maybe i will still do 1-2 more days.
